@@ -1,0 +1,7 @@
+离散余弦变换https://zh.wikipedia.org/wiki/%E7%A6%BB%E6%95%A3%E4%BD%99%E5%BC%A6%E5%8F%98%E6%8D%A2
+
+关于离散余弦变换https://www.jianshu.com/p/b923cd47ac4a
+
+图像的离散余弦变换https://blog.csdn.net/u011835903/article/details/77848011
+
+DCT变换、DCT反变换、分块DCT变换https://blog.csdn.net/li_wen01/article/details/72864485

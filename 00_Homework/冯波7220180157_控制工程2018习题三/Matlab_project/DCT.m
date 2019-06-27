@@ -1,0 +1,20 @@
+close;
+clear all;
+clc;
+[fn,pn,fi]=uigetfile('*.png','choose Image');
+imag=imread([pn fn]);
+I1=rgb2gray(imag); 
+dctI1=dct2(I1);
+dctgrayImage(abs(dctI1)<0.1)=0; 
+I2=idct2(dctI1)/255;  
+figure();
+subplot(2,2,1),imshow(imag);
+title('Ô­Í¼');
+subplot(2,2,2),imshow(I1);
+title('»Ò¶ÈÍ¼Ïñ');
+subplot(2,2,3),imshow(log(abs(dctI1)),[]);
+title('DCT±ä»»»Ò¶ÈÍ¼Ïñ');
+colormap(gray(4)), colorbar;
+subplot(2,2,4),imshow(I2); 
+title('DCTÄæ±ä»»Í¼Ïñ');
+
